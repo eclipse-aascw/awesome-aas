@@ -1,0 +1,13 @@
+# SPDX-FileCopyrightText: 2023 awesome-aas AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# The list of authors and the README (the curated link list) are prose which
+# is shown rendered, so they do not carry a comment header.
+[[annotations]]
+path = ["AUTHORS", "README.md"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 awesome-aas AUTHORS"
+SPDX-License-Identifier = "MIT"
