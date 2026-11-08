@@ -1,0 +1,31 @@
+# SPDX-FileCopyrightText: 2023 awesome-aas AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+name: Reuse
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  Reuse:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install reuse
+        run: |
+          python3 -m pip install --upgrade pip
+          pip3 install reuse==6.3.0
+
+      - name: Check the REUSE compliance
+        run: reuse lint
