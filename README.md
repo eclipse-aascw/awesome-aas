@@ -68,6 +68,12 @@ For Python, mostly generated from the OpenAPI specification
 
 https://github.com/rwth-iat/aas-api-python-client
 
+### aidconnect
+
+Python library that connects to an asset from its AAS: it reads the Asset Interfaces Description (IDTA 02017) and opens the OPC UA connection described there (endpoint, security, datapoints). Built on the BaSyx Python SDK.
+
+https://github.com/sulemanali5760/aidconnect
+
 ## Server Frameworks 🖥
 Server Frameworks enable the development of HTTP/REST interfaces to provide an AAS.
 
